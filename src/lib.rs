@@ -6,6 +6,9 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+/// System DNS manager: servers, cache, resolver state.
+pub mod sigmadns;
+
 /// Errors raised by this component.
 #[derive(Debug, thiserror::Error)]
 pub enum ComponentError {
